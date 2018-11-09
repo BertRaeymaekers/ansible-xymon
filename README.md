@@ -42,11 +42,6 @@
     
     
     AUTHOR: Bert Raeymaekers (https://github.com/BertRaeymaekers)
-            METADATA:
-              status:
-              - preview
-              supported_by: community
-            
     
     EXAMPLES:
     # Disable monitoring for one minute on all test of www.example.com:
