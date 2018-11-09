@@ -1,10 +1,5 @@
 #!/usr/bin/python
 
-ANSIBLE_METADATA = {
-    'metadata_version': '1.0',
-    'status': ['preview'],
-    'supported_by': 'community'
-}
 
 DOCUMENTATION = '''
 ---
@@ -14,8 +9,6 @@ author: "Bert Raeymaekers (https://github.com/BertRaeymaekers)"
 short_description: Controls states of hosts and test in Xymon
 description:
 - A module to control states of hosts and test in Xymon.
-requirements:
-- xymon
 options:
   xymon_host:
     required: true

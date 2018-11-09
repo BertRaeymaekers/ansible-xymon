@@ -41,14 +41,7 @@
             [Default: 1984]
 
 
-    REQUIREMENTS:  xymon
-
     AUTHOR: Bert Raeymaekers (https://github.com/BertRaeymaekers)
-            METADATA:
-              status:
-              - preview
-              supported_by: community
-            
 
     EXAMPLES:
     # Disable monitoring for 30 seconds on all test of www.example.com:
@@ -73,6 +66,4 @@
         state: enabled
 
     RETURN VALUES:
-
-
 
