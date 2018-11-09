@@ -1,0 +1,8 @@
+{
+    "ANSIBLE_MODULE_ARGS": {
+        "xymon_host": "xymon",
+        "host": "pi000",
+        "test": "conn",
+        "state": "enabled"
+    }
+}

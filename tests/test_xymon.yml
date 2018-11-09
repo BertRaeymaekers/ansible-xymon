@@ -1,0 +1,15 @@
+---
+- name: Playbook for testing the xymon module.
+  hosts: localhost
+  tasks:
+    - name: Disabling conn test on iPad
+      xymon:
+        xymon_host: xymon
+        host: iPad
+        test: conn
+        state: disabled
+        interval: 1m
+      register: disabled_result
+      ignore_errors: true
+    - debug:
+        msg: "{{disabled_result}}"

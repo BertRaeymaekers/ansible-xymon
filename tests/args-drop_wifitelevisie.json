@@ -1,0 +1,7 @@
+{
+    "ANSIBLE_MODULE_ARGS": {
+        "xymon_host": "xymon",
+        "host": "wifi.televisie",
+        "state": "absent"
+    }
+}
