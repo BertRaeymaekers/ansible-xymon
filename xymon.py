@@ -33,6 +33,9 @@ options:
     - "The test as specified in Xymon."
     - "It is required for setting a color as state (green, yellow, red) and
        absent."
+    - "Note that for absent by default, dropping a test in Xymon can only be
+       done from the xymon host itself, so you'll need to specify something
+       like delegate_to: xymonhost."
     - "If not specified (allowed with state disabled or enabled) it will effect
        all the tests on the host."
     default:
@@ -84,8 +87,8 @@ RETURN = '''
 '''
 
 STATE_COLOURS = ['green', 'yellow', 'red']
-# Removing 'absent' and 'query' until it works
-STATE_FIELDS = ('green', 'yellow', 'red', 'disabled', 'enabled')
+# Removing 'query' until it works
+STATE_FIELDS = ('green', 'yellow', 'red', 'disabled', 'enabled', 'absent')
 
 RETURN_VALUES = '''
 {
